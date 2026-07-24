@@ -222,10 +222,8 @@ body {
   width: 100%;
 }
 
-.meta-gif-overlay,
-.soft-mekuru-overlay,
-.hard-mekuru-overlay,
-.hb-mekuru-overlay {
+/* soft_mekuru-img 用（他のmekuruと完全に独立） */
+.soft-mekuru-overlay {
   position: absolute;
   left: 8.9%;
   top: 17.6%;
@@ -233,14 +231,22 @@ body {
   pointer-events: none;
 }
 
-/* それぞれ個別に位置調整できるよう分離（値は必要に応じて上書きしてください） */
-.soft-mekuru-overlay {
-}
-
+/* hard_mekuru-img 用（他のmekuruと完全に独立） */
 .hard-mekuru-overlay {
+  position: absolute;
+  left: 8.9%;
+  top: 17.6%;
+  width: 82.5%;
+  pointer-events: none;
 }
 
+/* hb_mekuru-img 用（他のmekuruと完全に独立） */
 .hb-mekuru-overlay {
+  position: absolute;
+  left: 8.9%;
+  top: 17.6%;
+  width: 82.5%;
+  pointer-events: none;
 }
 
 /* =============================
