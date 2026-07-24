@@ -222,29 +222,29 @@ body {
   width: 100%;
 }
 
-/* soft_mekuru-img 用（他のmekuruと完全に独立） */
+/* soft_mekuru-img */
 .soft-mekuru-overlay {
   position: absolute;
   left: 8.9%;
-  top: 17.6%;
+  top: 20.5%;
   width: 82.5%;
   pointer-events: none;
 }
 
-/* hard_mekuru-img 用（他のmekuruと完全に独立） */
+/* hard_mekuru-img */
 .hard-mekuru-overlay {
   position: absolute;
   left: 8.9%;
-  top: 17.6%;
+  top: 22.6%;
   width: 82.5%;
   pointer-events: none;
 }
 
-/* hb_mekuru-img 用（他のmekuruと完全に独立） */
+/* hb_mekuru-img */
 .hb-mekuru-overlay {
   position: absolute;
   left: 8.9%;
-  top: 17.6%;
+  top: 21.1%;
   width: 82.5%;
   pointer-events: none;
 }
