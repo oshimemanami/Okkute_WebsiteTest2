@@ -12,6 +12,7 @@
   ============================= */
   --space-2:   2px;
   --space-10:  10px;
+  --space-15:  15px;
   --space-20:  20px;
   --space-40:  40px;
   --space-60:  60px;
@@ -73,6 +74,7 @@ body {
 .sp-0   { margin-bottom: 0; }
 .sp-2   { margin-bottom: var(--space-2); }
 .sp-10  { margin-bottom: var(--space-10); }
+.sp-15  { margin-bottom: var(--space-15); }
 .sp-20  { margin-bottom: var(--space-20); }
 .sp-40  { margin-bottom: var(--space-40); }
 .sp-50  { margin-bottom: 50px; }
@@ -158,11 +160,6 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* フッターPC被り対策 */
-.fixed-footer-spacer {
-  height: 80px;
-}
-
 /* PC版meta_15b bottom */
 @media (min-width: 641px) {
   .meta-15b-link {
@@ -225,12 +222,25 @@ body {
   width: 100%;
 }
 
-.meta-gif-overlay {
+.meta-gif-overlay,
+.soft-mekuru-overlay,
+.hard-mekuru-overlay,
+.hb-mekuru-overlay {
   position: absolute;
   left: 8.9%;
   top: 17.6%;
   width: 82.5%;
   pointer-events: none;
+}
+
+/* それぞれ個別に位置調整できるよう分離（値は必要に応じて上書きしてください） */
+.soft-mekuru-overlay {
+}
+
+.hard-mekuru-overlay {
+}
+
+.hb-mekuru-overlay {
 }
 
 /* =============================
@@ -316,6 +326,13 @@ body {
 
 .fixed-footer-spacer {
   height: 60px;
+}
+
+/* フッターPC被り対策：PC幅では固定フッターの実高さが増えるため広めに確保 */
+@media (min-width: 641px) {
+  .fixed-footer-spacer {
+    height: 80px;
+  }
 }
 
 /* =============================
